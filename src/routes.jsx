@@ -8,6 +8,7 @@ import ContactUs from "./pages/contact";
 import Sermons from "./pages/sermons";
 import Login from "./pages/login";
 import Give from "./pages/give";
+import Admin from "./pages/admin";
 
 const routes = [
     {
@@ -32,7 +33,7 @@ const routes = [
             element: <Compassion/>
         },
         {
-            path: "/contactus",
+            path: "/contacts",
             element: <ContactUs/>
         },
         {
