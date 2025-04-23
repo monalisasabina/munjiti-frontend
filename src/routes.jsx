@@ -10,7 +10,9 @@ import Login from "./pages/login";
 import Give from "./pages/give";
 import Admin from "./pages/admin";
 import Pastor from "./pages/pastor";
-import History from "./history";
+import History from "./pages/history";
+import Maintenance from "./pages/maintenance"
+
 
 const routes = [
     {
@@ -61,6 +63,10 @@ const routes = [
         {
             path: "/about/pastor",
             element: <Pastor />
+        },
+        {
+            path: "/maintainance",
+            element: <Maintenance />
         }
           
 

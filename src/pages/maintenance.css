@@ -1,0 +1,14 @@
+.maintenance {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  padding: 20px;
+  margin-top: 0px;
+  height: 100px;
+  width: 100vw;
+}
+
+
+.maintenance h1 {
+  margin-bottom: 10px;
+}
