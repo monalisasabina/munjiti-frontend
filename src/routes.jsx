@@ -9,6 +9,8 @@ import Sermons from "./pages/sermons";
 import Login from "./pages/login";
 import Give from "./pages/give";
 import Admin from "./pages/admin";
+import Pastor from "./pages/pastor";
+import History from "./history";
 
 const routes = [
     {
@@ -52,6 +54,15 @@ const routes = [
             path: "/give",
             element: <Give/>
         },
+        {
+            path: "/about/history",
+            element: <History />
+        },
+        {
+            path: "/about/pastor",
+            element: <Pastor />
+        }
+          
 
 
       ]
