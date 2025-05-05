@@ -19,7 +19,7 @@ function NavBar(){
 
             {/* Dropdown */}
             <div className="nav-link">
-                <button onClick={() =>setShowDropdown(!showDropdown)} >About ▾</button>
+                <button className="about" onClick={() =>setShowDropdown(!showDropdown)} >About ▾</button>
 
                 {showDropdown && (
                     
