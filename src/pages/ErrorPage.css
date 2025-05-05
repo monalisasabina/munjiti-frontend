@@ -1,0 +1,56 @@
+.error_button {
+    color: blue;
+    background-color: #f2f4f4 ;
+    height: 50px;
+    width: 180px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    border: 5px;
+    border-style: double;
+    border-color: cadetblue;
+   
+}
+
+.error_title{
+    color: #e59866 ;
+    font-size: 100px;
+}
+
+.error_warning{
+    color: black;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.error_cont{
+    background-color: #fff8dc;
+    height: 400px;
+    width: 600px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    left: 50%;
+    display: flex;
+    margin-top: 50px;
+   
+}
+
+.error_emoji {
+    font-size: 60px;
+    animation: bounce 1.5s infinite;
+    margin-bottom: 20px;
+    position: static;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  

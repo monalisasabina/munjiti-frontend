@@ -24,8 +24,8 @@ function NavBar(){
                 {showDropdown && (
                     
                     <div>
-                        <button onClick={() => handleDropdownClick("/about/history")}>History</button>
-                        <button onClick={() => handleDropdownClick("/about/pastor")}>Pastor</button>
+                        <button className="dropdown" onClick={() => handleDropdownClick("/about/history")}>History</button>
+                        <button className="dropdown"  onClick={() => handleDropdownClick("/about/pastor")}>Pastor</button>
                     </div>
                 )}
             </div>

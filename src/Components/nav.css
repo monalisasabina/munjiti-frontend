@@ -28,7 +28,7 @@ nav {
     position: relative; /* Needed for positioning the dropdown */
   }
   
-  button {
+  button .dropdown {
     background: none;
     border: none;
     color: white;
