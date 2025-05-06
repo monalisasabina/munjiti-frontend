@@ -1,35 +1,36 @@
-/* #root {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-} */
-
+/* Reset and base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Ensure body and html fill the screen */
-html {
-  height: 0%;
+/* Full viewport */
+html, body {
+  height: 100%;
   width: 100%;
-  
+  font-family: Arial, sans-serif;
 }
 
+/* Main body layout */
 body {
-  margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column;
   min-width: 320px;
-  min-height: 2vh;
+  background-color: #fff;
 }
 
-h1{
+/* If using React root element */
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Headline */
+h1 {
   text-align: center;
   color: blueviolet;
   font-size: 3.2em;
   line-height: 1.1;
 }
-
