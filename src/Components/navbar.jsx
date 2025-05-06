@@ -1,6 +1,8 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import "./nav.css"
+import logo from '../Pictures/munjiti-church-high-resolution-logo.png'
 import { useState } from "react";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 function NavBar(){
 
@@ -15,22 +17,30 @@ function NavBar(){
 
     return(
         <nav>
+             {/* LOGO */}
+            <div className="nav_link">
+                <NavLink to="/">
+                       <img src={logo} className="logo"/>
+                </NavLink>
+            </div>
+
+            {/* HOME */}
             <NavLink to="/" className="nav_link">Home</NavLink>
 
-            {/* Dropdown */}
-            <div className="nav-link">
-                <button className="about" onClick={() =>setShowDropdown(!showDropdown)} >About ▾</button>
+            {/* DROPDOWN*/}
+            <div className="dropdown_cont">
+                <button className="nav_link" onClick={() =>setShowDropdown(!showDropdown)} >About <div className="dropdown_icon"> <RiArrowDropDownLine/></div> </button>
 
                 {showDropdown && (
                     
-                    <div>
-                        <button className="dropdown" onClick={() => handleDropdownClick("/about/history")}>History</button>
-                        <button className="dropdown"  onClick={() => handleDropdownClick("/about/pastor")}>Pastor</button>
+                    <div className="dropdown_menu">
+                        <button  onClick={() => handleDropdownClick("/about/history")}>History</button>
+                        <button  onClick={() => handleDropdownClick("/about/pastor")}>Pastor</button>
                     </div>
                 )}
             </div>
 
-
+            {/* OTHER NAV LINKS */}
             <NavLink to="/ministries" className="nav_link">Ministries</NavLink>
             <NavLink to="/compassion" className="nav_link">Compassion</NavLink>
             <NavLink to="/contacts" className="nav_link">Contact</NavLink>

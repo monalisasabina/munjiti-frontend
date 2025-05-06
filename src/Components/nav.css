@@ -1,82 +1,81 @@
-/* Basic styles for the navbar */
+/* Navbar container */
 nav {
-    display: flex;
-    gap: 1.5rem;
-    background-color: #2c3e50; /* Dark blue/grey background */
-    padding: 1rem 2rem;
-    align-items: center;
-    position: relative;
-    width: 1000%;
-    margin-top: 100px;
-  }
-  
-  .nav_link {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: background 0.3s ease;
-    font-size: 1rem;
-  }
-  
-  .nav_link:hover {
-    background-color: #34495e; /* Slightly lighter background on hover */
-    border-radius: 5px;
-  }
-  
-  /* Styles for the dropdown button (About ▾) */
-  .nav-link {
-    position: relative; /* Needed for positioning the dropdown */
-  }
-  
-  button .dropdown {
-    background: none;
-    border: none;
-    color: white;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: wheat;
-    border-radius: 5px;
-  }
+  display: flex;
+  align-items: center;
+  background-color: navy;
+  padding: 1rem 2rem;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 10;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 180%;
+  gap: 20px;
+}
 
-  .about{
-    background-color: #2c3e50;
-    color: #fff;
-    font-size: 1rem;
-  }
+/* Logo styles */
+.logo_cont {
+  margin-right: auto;
+}
+
+.logo {
+  height: 70px;
+  width:90px;
+}
+
+/* All nav links including dropdown button */
+.nav_link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+}
+
+.nav_link:hover {
+  background-color: #001f4d;
+  border-radius: 5px;
+}
+
+/* Dropdown container */
+.dropdown_cont {
+  position: relative;
+}
+
+/* Dropdown menu styles */
+.dropdown_menu {
+  position: absolute;
+  top: 100%; /* position it just below the button */
+  left: 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+  min-width: 160px;
+  z-index: 100;
+}
+
+/* Dropdown buttons */
+.dropdown_menu button {
+  width: 100%;
+  padding: 10px 16px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 0.95rem;
+  color: black;
+  cursor: pointer;
+}
+
+.dropdown_menu button:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown_icon {
+  font-size: 1.5rem; /* Adjust size here */
+  margin-left: 5px;
   
-  /* Dropdown menu styles */
-  div > div {
-    position: absolute;
-    top: 100%; /* Position dropdown below the button */
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 150px; /* Adjust width as needed */
-    border-radius: 5px;
-    margin-top: 0.25rem;
-    z-index: 1000; /* Ensure it stays on top of other content */
-  }
-  
-  /* Dropdown item button styles */
-  div > div button {
-    display: block;
-    width: 100%;
-    padding: 0.75rem 1rem;
-    background: none;
-    border: none;
-    text-align: left;
-    font-size: 0.95rem;
-    cursor: pointer;
-    color: #2c3e50; /* Dark text */
-  }
-  
-  /* Dropdown item hover effect */
-  div > div button:hover {
-    background-color: #ecf0f1; /* Light grey on hover */
-    border-radius: 5px;
-  }
-  
+}
+
