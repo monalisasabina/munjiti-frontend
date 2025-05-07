@@ -1,0 +1,32 @@
+.home_cont{
+    background-image: url(src/Pictures/church_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;  /* Optional: vertically center the content */
+    justify-content: center; /* Optional: horizontally center the content*/
+    flex: 1;
+    flex-direction: column;
+}
+
+.home_title {
+   color: black;
+   text-align: center;
+   margin-bottom: 40px;
+   margin-left: 7px;
+   justify-content: left;
+   word-wrap: break-word;
+ 
+
+}
+
+.home_services_cont{
+    background-color: burlywood;
+    text-decoration: underline;
+    width: 100%;
+    height: 200px;
+    margin-top: 200px;
+}
