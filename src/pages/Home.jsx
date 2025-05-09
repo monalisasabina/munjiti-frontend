@@ -12,8 +12,6 @@ function Home(){
  
           <div className="home_images_cont">
                <img className="home_image"  src={churchImage} alt="church image"/>
-
-               {/* <img className="home_image_1"  src={bibleQuote} alt="Philipians 4:13"/> */}
           </div>
          
         </div>

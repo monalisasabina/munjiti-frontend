@@ -18,6 +18,23 @@
    font-family: "Work Sans", sans-serif;
    font-size: 55px;
    flex-wrap: wrap;
+   font-weight: 700;
+   line-height: 1.2;
+   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+   padding: 0 20px;
+  
+   /* ANIMATION */
+   opacity: 0;
+   transform: translateY(40px);
+   animation: slideFadeIn 1.5s ease-out forwards;
+}
+
+/* ANIMATION */
+@keyframes slideFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .home_services_cont{
@@ -67,14 +84,8 @@
     height: 350px;
     margin-right: 20px;
     border-radius: 20px;
-}
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 
-.home_image_1{
-    margin-top: 20px;
-    width: 800px;
-    height: 200px;
-    margin-right: 20px;
-    border-radius: 20px;
 }
 
 .home_intro{

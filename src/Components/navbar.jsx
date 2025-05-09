@@ -43,7 +43,7 @@ function NavBar(){
             {/* OTHER NAV LINKS */}
             <NavLink to="/ministries" className="nav_link">Ministries</NavLink>
             <NavLink to="/compassion" className="nav_link">Compassion</NavLink>
-            <NavLink to="/contacts" className="nav_link">Contact</NavLink>
+            <NavLink to="/contacts" className="nav_link">Contact Us</NavLink>
             <NavLink to="/give" className="nav_link">Give</NavLink>
         </nav>
     )
