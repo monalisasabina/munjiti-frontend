@@ -31,7 +31,7 @@ function ContactUs(){
                           placeholder='Your Email...' />
 
                     {/* Message */}
-                    <label htmlFor='fname'>First Name</label>
+                    <label htmlFor='fname'>Message</label>
                     <textarea className='contact_message'
                               name='message'
                               placeholder=''

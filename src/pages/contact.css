@@ -7,8 +7,22 @@
     align-items: center;  /* Optional: vertically center the content */
     justify-content: center; /* Optional: horizontally center the content*/
     flex: 1;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
 }
+
+.contact_title_cont {
+  max-width: 300px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact_form_cont {
+  max-width: 600px;
+  flex: 1;
+}
+
 
 .contact_title {
    color: black;
