@@ -4,29 +4,73 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    align-items: center;  /* Optional: vertically center the content */
     justify-content: center; /* Optional: horizontally center the content*/
     flex: 1;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
 }
 
 .contact_title_cont {
   max-width: 300px;
   display: flex;
   align-items: flex-start;
+  margin-top: 40px;
 }
+
+/* .other_contact h3{
+  
+} */
 
 .contact_form_cont {
   max-width: 600px;
   flex: 1;
+  margin-top: 40px;
 }
 
+.contact_form{
+  border: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  width: 500px;
+  padding: 10px;
+  background-color: #eaeded ;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact_input{
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 450px;
+  height: 30px;
+}
+
+label{
+  display: flex;
+  margin-left: 10px;
+  width: 450px;
+}
+
+.contact_message{
+  margin-left: 10px;
+  width: 450px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.contact_button{
+  margin-left: 10px;
+  width: 60px;
+  height: 40px;
+  background-color:cornflowerblue;
+  border-radius: 3px;
+  border-style: none;
+}
 
 .contact_title {
    color: black;
-   margin-top: 60px;
+   margin-top: 20px;
    justify-content: center;
    text-align: center;
    font-family: "Work Sans", sans-serif;
