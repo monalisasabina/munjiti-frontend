@@ -1,9 +1,15 @@
+import './give.css'
+
 function Give(){
 
     return(
-        <>
-           <h1>Giving Donations!!!</h1>
-        </>
+
+        <div className="give_cont">
+
+            <h1 className='give_title'>Donations</h1>
+
+        </div>
+       
     )
 }
 
