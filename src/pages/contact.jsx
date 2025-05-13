@@ -1,4 +1,6 @@
 import './contact.css'
+import { HiMiniDevicePhoneMobile } from "react-icons/hi2";
+import { MdOutlineEmail } from "react-icons/md";
 
 function ContactUs(){
 
@@ -9,10 +11,11 @@ function ContactUs(){
               <h1 className='contact_title'>CONTACT US</h1>
 
               <div className='other_contacts'>
-                 <h3> Mobile No: </h3>
+                 <h3> <HiMiniDevicePhoneMobile /> Mobile No: </h3>
+                 <h4> 00000000000000</h4>
+                 <h3> <MdOutlineEmail /> Email: </h3>
+                 <h4>  munjiti@munjiti.com </h4> 
               </div>
-
- 
 
            </div>
 

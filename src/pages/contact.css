@@ -9,18 +9,27 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
+    font-family: "Work Sans", sans-serif;
 }
 
 .contact_title_cont {
   max-width: 300px;
   display: flex;
   align-items: flex-start;
-  margin-top: 40px;
+  margin-top: 50px;
+  flex-direction: column;
 }
 
-/* .other_contact h3{
-  
-} */
+.other_contacts h3{
+  margin: 10px;
+  color: cornflowerblue ;
+}
+
+.other_contacts h4{
+  margin: 10px;
+  color: black
+}
+
 
 .contact_form_cont {
   max-width: 600px;
@@ -70,7 +79,6 @@ label{
 
 .contact_title {
    color: black;
-   margin-top: 20px;
    justify-content: center;
    text-align: center;
    font-family: "Work Sans", sans-serif;
