@@ -6,7 +6,7 @@ function Give(){
 
         <div className="give_cont">
 
-            <h1 className='give_title'>Donations</h1>
+            <h1 className='give_title'>Donations Page</h1>
 
         </div>
        
