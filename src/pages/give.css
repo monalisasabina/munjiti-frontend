@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center; /* Optional: horizontally center the content*/
     flex: 1;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 40px;
     font-family: "Work Sans", sans-serif;
@@ -24,6 +24,7 @@
    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
    padding: 0 20px;
   
+  
    /* ANIMATION */
    opacity: 0;
    transform: translateY(40px);
@@ -38,11 +39,22 @@
   }
 }
 
-.donate_cont{
+.give_para1{
+  margin-left: 10px;
+  text-align: center;
+}
+
+.donate_mpesa_logo{
+  height: 70px;
+  width: 100%;
+}
+
+/* .donate_cont{
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
   flex:2;
+  margin: 10px;
 }
 
 .donate_card {
@@ -51,4 +63,58 @@
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+
+.donate_cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
 }
+
+.donate_card {
+  background-color: #f8fdf8;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s ease;
+}
+
+.donate_card:hover {
+  transform: translateY(-4px);
+}
+
+.donate_card h2 {
+  color: #2c5f2d;
+  margin-bottom: 0.5rem;
+}
+
+.donate_card a {
+  color: #1e88e5;
+  text-decoration: none;
+}
+
+.donate_mpesa_logo {
+  height: 40px;
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+
+@media (max-width: 600px) {
+  .donate_cont {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .donate_card {
+    padding: 1.2rem;
+  }
+}
+
