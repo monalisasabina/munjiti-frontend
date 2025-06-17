@@ -68,9 +68,6 @@ const routes = [
             path: "/maintainance",
             element: <Maintenance />
         }
-          
-
-
       ]
     }
 ]
