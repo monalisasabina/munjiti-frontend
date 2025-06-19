@@ -12,6 +12,12 @@ import Admin from "./pages/admin";
 import Pastor from "./pages/pastor";
 import History from "./pages/history";
 import Maintenance from "./pages/maintenance"
+import CompassionAbout from "./pages/CompassionAbout";
+import Bakery from "./pages/Bakery";
+import Saloon from "./pages/Saloon";
+import IT from "./pages/IT";
+import School from "./pages/School";
+import Missions from "./pages/Missions";
 
 
 const routes = [
@@ -67,7 +73,32 @@ const routes = [
         {
             path: "/maintainance",
             element: <Maintenance />
-        }
+        },
+        {
+            path: "/compassion/about",
+            element: <CompassionAbout />
+        },
+        {
+            path: "/compassion/bakery",
+            element: <Bakery />
+        },
+        {
+            path: "/compassion/saloon",
+            element: <Saloon />
+        },
+        {
+            path: "/compassion/it",
+            element: <IT />
+        },
+        {
+            path: "/compassion/school",
+            element: < School/>
+        },
+        {
+            path: "/compassion/missions",
+            element: <Missions/>
+        },
+        
       ]
     }
 ]

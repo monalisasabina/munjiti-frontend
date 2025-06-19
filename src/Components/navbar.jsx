@@ -86,20 +86,18 @@ function NavBar(){
 
                         </div>
 
+                       
                         {/* Projects submenu */}
-
                         {showMinistriesSubmenu && (
                             <div className="submenu">
-                               <button onClick={() => handleDropdownClick("/compassion/youth")}>Youth</button>
-                               <button onClick={() => handleDropdownClick("/compassion/women")}>Women</button>
-                               <button onClick={() => handleDropdownClick("/compassion/men")}>Men</button>
+                               <button onClick={() => handleDropdownClick("/compassion/bakery")}>Bakery</button>
+                               <button onClick={() => handleDropdownClick("/compassion/saloon")}>Saloon</button>
+                               <button onClick={() => handleDropdownClick("/compassion/it")}>IT</button>
+                               <button onClick={() => handleDropdownClick("/compassion/school")}>School</button>
+                               <button onClick={() => handleDropdownClick("/compassion/missions")}>Missions</button>
                             
                         </div>
-
-                        )}
-                        
-                       
-                       
+                        )}  
                     </div>
                 )}
             </div>
