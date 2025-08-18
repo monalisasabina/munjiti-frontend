@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import './give.css'
 import lipanampesa from '../Pictures/lipa na mpesa image.jpg'
+import header_image from '../Pictures/Sunrays Over Verdant Landscape.png'
 import { FaUniversity } from "react-icons/fa";
 import { CiMobile3 } from "react-icons/ci";
 import { LiaHandsHelpingSolid } from "react-icons/lia";
@@ -14,14 +15,17 @@ function Give(){
     }
 
     return(
-
         <div className="give_cont">
 
             {/* HEADER */}
             <div className='give_header'>
 
-                 <h1 className='give_title'>Ways to Give</h1>
-                 <p className='give_para1' > We are grateful for your support</p>
+                <img src={header_image} alt='header_image' />
+                
+                <div  className='give_header_text'>
+                      <h1 className='give_title'>Ways to Give</h1>
+                      <p className='give_para1' > We are grateful for your support</p>
+                </div>
 
             </div>
            

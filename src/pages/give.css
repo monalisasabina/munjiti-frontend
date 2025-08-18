@@ -2,7 +2,7 @@
     background-color: #ebf5fb ;
     background-size: cover;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center; /* Optional: horizontally center the content*/
     flex: 1;
@@ -12,17 +12,11 @@
     padding: 24px;
 }
 
-.give_header {
+.give_header{
   position: relative;
   width: 100%;
-  height: 250px; /* adjust depending on how tall you want it */
-  background-image: url('src/Pictures/Sunrays Over Verdant Landscape.png');
-  background-size: cover;       /* makes image cover entire div */
-  background-position: center;  /* centers the image */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;      /* vertical centering */
-  align-items: center;          /* horizontal centering */
+  height: 350px;
+  overflow: hidden;
 }
 
 .give_header::after {
@@ -32,8 +26,25 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4);  /* dark overlay for readability */
-  z-index: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+}
+
+.give_header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* behaves like background-size: cover */
+  display: block;
+}
+
+.give_header_text {
+  position: absolute;
+  top: 50%;   /* vertically center */
+  left: 50%;  /* horizontally center */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* make text readable */
+  padding: 1rem 2rem;
+  border-radius: 8px;
 }
 
 .give_title{
