@@ -1,80 +1,21 @@
 .contact_cont{
     background-color: #ebf5fb ;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center; /* Optional: horizontally center the content*/
-    flex: 1;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 40px;
     font-family: "Work Sans", sans-serif;
+    padding-bottom: 80px;
 }
 
 .contact_title_cont {
-  max-width: 300px;
+  width: 100%;
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
   margin-top: 50px;
-  flex-direction: column;
-}
-
-.other_contacts h3{
-  margin: 10px;
-  color: cornflowerblue ;
-}
-
-.other_contacts h4{
-  margin: 10px;
-  color: black
-}
-
-
-.contact_form_cont {
-  max-width: 600px;
-  flex: 1;
-  margin-top: 40px;
-}
-
-.contact_form{
-  border: 1px;
-  border-style: solid;
-  border-radius: 5px;
-  width: 500px;
-  padding: 10px;
-  background-color: #eaeded ;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.contact_input{
-  display: flex;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  width: 450px;
-  height: 30px;
-}
-
-label{
-  display: flex;
-  margin-left: 10px;
-  width: 450px;
-}
-
-.contact_message{
-  margin-left: 10px;
-  width: 450px;
-  height: 60px;
-  margin-bottom: 10px;
-}
-
-.contact_button{
-  margin-left: 10px;
-  width: 60px;
-  height: 40px;
-  background-color:cornflowerblue;
-  border-radius: 3px;
-  border-style: none;
 }
 
 .contact_title {
@@ -102,6 +43,49 @@ label{
     transform: translateY(0);
   }
 }
+ 
+/* MAIN CONTACT */
+.contact_main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap; /* ensures it stacks on small screens */
+  width: 100%;
+}
+
+/* image */
+.contact_image {
+  width: 300px;
+  max-width: 90%;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* CONTACTS */
+.other_contacts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.other_contacts h3{
+  margin: 10px 0 5px;
+  color: cornflowerblue ;
+}
+
+.other_contacts h4{
+  margin: 0 0 15px;
+  color: black
+}
+
+.map_cont{
+  width: 100%;
+  max-width: 900px;
+
+}
+
 
 @media (max-width: 600px) {
   .contact_cont {
@@ -118,25 +102,8 @@ label{
     margin-top: 20px;
   }
 
-  .contact_form_cont {
-    max-width: 100%;
-    margin-top: 20px;
-  }
-
-  .contact_form {
-    width: 100%;
-    padding: 1rem;
-  }
-
-  .contact_input,
-  .contact_message,
-  label {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .contact_button {
-    width: 100%;
-    margin-left: 0;
+  .contact_main{
+    flex-direction: column;
+    gap: 20px;
   }
 }

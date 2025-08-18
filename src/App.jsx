@@ -9,10 +9,6 @@ function App() {
   const isMaintenance =  false
 
   return (
-    // <>
-    //   <NavBar/>
-    //   <Outlet/>
-    // </>
 
     <>
        {isMaintenance ? (

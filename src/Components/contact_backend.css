@@ -1,0 +1,142 @@
+.contact_cont{
+    background-color: #ebf5fb ;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Optional: horizontally center the content*/
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    font-family: "Work Sans", sans-serif;
+}
+
+.contact_title_cont {
+  max-width: 300px;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.other_contacts h3{
+  margin: 10px;
+  color: cornflowerblue ;
+}
+
+.other_contacts h4{
+  margin: 10px;
+  color: black
+}
+
+
+.contact_form_cont {
+  max-width: 600px;
+  flex: 1;
+  margin-top: 40px;
+}
+
+.contact_form{
+  border: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  width: 500px;
+  padding: 10px;
+  background-color: #eaeded ;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact_input{
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 450px;
+  height: 30px;
+}
+
+label{
+  display: flex;
+  margin-left: 10px;
+  width: 450px;
+}
+
+.contact_message{
+  margin-left: 10px;
+  width: 450px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.contact_button{
+  margin-left: 10px;
+  width: 60px;
+  height: 40px;
+  background-color:cornflowerblue;
+  border-radius: 3px;
+  border-style: none;
+}
+
+.contact_title {
+   color: black;
+   justify-content: center;
+   text-align: center;
+   font-family: "Work Sans", sans-serif;
+   font-size: 55px;
+   flex-wrap: wrap;
+   font-weight: 700;
+   line-height: 1.2;
+   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+   padding: 0 20px;
+  
+   /* ANIMATION */
+   opacity: 0;
+   transform: translateY(40px);
+   animation: slideFadeIn 1.5s ease-out forwards;
+}
+
+/* ANIMATION */
+@keyframes slideFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .contact_cont {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .contact_title_cont {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .contact_form_cont {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .contact_form {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .contact_input,
+  .contact_message,
+  label {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .contact_button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
