@@ -15,7 +15,7 @@
 .give_header{
   position: relative;
   width: 100%;
-  height: 350px;
+  height: 300px;
   overflow: hidden;
 }
 
@@ -27,6 +27,7 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+  border-radius: 10px;
 }
 
 .give_header img {
@@ -34,6 +35,7 @@
   height: 100%;
   object-fit: cover; /* behaves like background-size: cover */
   display: block;
+  border-radius: 10px;
 }
 
 .give_header_text {
@@ -77,17 +79,47 @@
 .give_para1{
   margin-left: 10px;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #444;
-
 }
 
-.donate_mpesa_logo{
-  height: 70px;
-  width: 100%;
+.give_verse {
+  margin: 0.8rem auto 0;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: rgba(0,0,0,0.92);
+  max-width: 680px;
+  line-height: 1.45;
+  border-left: 3px solid rgba(255,255,255,0.14); /* subtle visual cue */
+  padding-left: 1rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.verse-ref{
+  display: block;
+  margin-top: 0.5rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.9);
+}
+
+@media (max-width: 900px) {
+  .give_title { font-size: 2.2rem; }
+  .give_para1 { font-size: 1rem; }
+  .give_verse { font-size: 0.92rem; max-width: 92%; padding-left: 0.8rem; }
+}
+
+@media (max-width: 520px) {
+  .give_header { height: 300px; }
+  .give_title { font-size: 1.6rem; }
+  .give_para1 { font-size: 0.95rem; }
+  .give_verse { font-size: 0.86rem; }
 }
 
 
+/* DONATION CARD */
 .donate_cont {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -97,6 +129,8 @@
   max-width: 1200px;
   box-sizing: border-box;
 }
+
+
 
 .donate_card {
    background: rgba(255, 255, 255, 0.8); /* semi-transparent */
@@ -138,6 +172,11 @@
 .donate_icon {
   color: #2c5f2d;
   font-size: 1.4rem;
+}
+
+.donate_mpesa_logo{
+  height: 70px;
+  width: 100%;
 }
 
 

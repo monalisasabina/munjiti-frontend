@@ -24,7 +24,13 @@ function Give(){
                 
                 <div  className='give_header_text'>
                       <h1 className='give_title'>Ways to Give</h1>
-                      <p className='give_para1' > We are grateful for your support</p>
+                      <br/>
+                      <p className='give_para1' > Your generosity is a blessing that enables us to carry out God's work in our community.</p>
+                      <br />
+                      <blockquote className='give_verse'
+                               >"Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver." <cite className='verse_ref'>-2 Corinthians 6:38</cite>
+                       </blockquote>
+                     
                 </div>
 
             </div>
