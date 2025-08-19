@@ -49,15 +49,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
   flex-wrap: wrap; /* ensures it stacks on small screens */
   width: 100%;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+
 }
 
 /* image */
 .contact_image {
   width: 300px;
-  max-width: 90%;
+  max-width: 95%;
   border-radius: 12px;
   margin: 1.5rem 0;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -68,24 +71,40 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 1rem;
 }
 
-.other_contacts h3{
-  margin: 10px 0 5px;
-  color: cornflowerblue ;
-}
+.contact-item {
+  display: flex;
+  justify-content: space-between; /* text left, icon/value right */
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* optional divider */
+  border-bottom: 1px solid #ccc;
+} 
 
-.other_contacts h4{
-  margin: 0 0 15px;
-  color: black
+.contact-item span {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between text and icon */
 }
 
 .map_cont{
   width: 100%;
   max-width: 900px;
-
 }
 
+.map_cont h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+iframe{
+  border-radius: 30px ;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 
 @media (max-width: 600px) {
   .contact_cont {
