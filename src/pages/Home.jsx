@@ -8,8 +8,9 @@ function Home(){
 
        <div className="home_intro">
 
-          <h1 className="home_title"> Welcome to St. Mary's Munjiti Church</h1>
- 
+          <h1 className="home_title"> Welcome to St. Mary's Munjiti Parish</h1>
+          
+
           <div className="home_images_cont">
                <img className="home_image"  src={churchImage} alt="church image"/>
           </div>
