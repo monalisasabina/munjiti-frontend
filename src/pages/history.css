@@ -48,9 +48,22 @@
 
 /* Mission & Vision */
 .mission-vision {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.mission-cont, .vision-cont {
+  text-align: center;
+}
+
+.mission-cont img, .vision-cont img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 45%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .mission-vision h3 {
