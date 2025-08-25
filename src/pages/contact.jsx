@@ -4,6 +4,7 @@ import { HiMiniDevicePhoneMobile } from "react-icons/hi2";
 import { MdOutlineEmail } from "react-icons/md";
 import { GiPostOffice } from "react-icons/gi";
 import { IoLocationOutline } from "react-icons/io5";
+import { FaPhone } from "react-icons/fa6";
 
 function ContactUs(){
 
@@ -32,7 +33,7 @@ function ContactUs(){
                   
                   {/* MOBILE NUMBER */}
                   <div className='contact-item'>
-                     <h3> <HiMiniDevicePhoneMobile/> +254 700 000 000  </h3>
+                     <h3> <FaPhone /> +254 700 000 000  </h3>
                   </div>
 
                   {/* EMAIL */}
@@ -42,7 +43,7 @@ function ContactUs(){
                  
                   {/* ADDRESS */}
                   <div className='contact-item'>
-                     <h3>  <GiPostOffice /> P.O Box 12345 Yala Kenya</h3>
+                     <h3>  <GiPostOffice /> P.O Box 12345 Yala, Kenya</h3>
                   </div>
 
                   {/* Google map location */}
@@ -60,15 +61,9 @@ function ContactUs(){
                          referrerpolicy="no-referrer-when-downgrade"
                   ></iframe>
                </div>
-
-
-               </div>
-
-               
-
             </div>
-        
-         </div> 
+         </div>  
+      </div> 
     )
 }
 
