@@ -19,30 +19,29 @@ function Home(){
                   A welcoming Anglican community in Munjiti, rooted in faith, worship and fellowship
              </p>
          </div>
-      </div>
 
+
+         {/* Buttons */}
+         <div className="home_button">
+              <button onClick={() => navigate("/visit")}>Plan Your Visit</button>
+              <button onClick={() => navigate("/notices")}>Notices</button>
+         </div>
+
+         {/* BIBLE VERSE */}
+         <div className="home_bible_verse">
+              <blockquote className="give_verse">
+                <p>But seek first his kingdom and his righteousness, and all these things will be given to you as well</p>
+                <cite className="verse_ref">-Matthew 6:33</cite>
+             </blockquote>
+         </div>
+
+      </div>
+       
       {/* HOME IMAGES */}
       <div className="home_images_cont">
                <img className="home_image"  src={churchImage} alt="St. Mary's Munjiti Church building"/>
           </div>
    
-
-       {/* Buttons */}
-       <div className="home_button">
-
-        <button onClick={() => navigate("/visit")}>Plan Your Visit</button>
-        <button onClick={() => navigate("/notices")}>Notices</button>
-
-       </div>
-
-      {/* BIBLE VERSE */}
-       <div className="home_bible_verse">
-           <blockquote className="give_verse">
-               <p>But seek first his kingdom and his righteousness, and all these things will be given to you as well</p>
-               <cite className="verse_ref">-Matthew 6:33</cite>
-             </blockquote>
-       </div>
-
     </div>
 
  )

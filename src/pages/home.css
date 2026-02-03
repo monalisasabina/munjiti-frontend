@@ -1,183 +1,162 @@
-.home_cont{
-    background-color: #ebf5fb ;
-    background-size: cover;
-    height: 100vh;
+/* ====== Home Container ====== */
+.home_cont {
+    background-color: #ebf5fb;
     width: 100%;
+    min-height: 60vh;
     display: flex;
-    align-items: center;  /* Optional: vertically center the content */
-    justify-content: center; /* Optional: horizontally center the content*/
+    flex-direction: row; /* Main container row: text left, image right */
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 4%;
+    gap: 2rem;
+    flex-wrap: wrap; /* Makes it responsive */
+    box-sizing: border-box;
+}
+
+/* ====== Intro Section ====== */
+.home_intro {
     flex: 1;
+    display: flex;
     flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
 }
 
-.home_heading_block {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
+/* Hero Title & Subtitle */
 .home_title {
-   color: black;
-   margin-top: 60px;
-   justify-content: center;
-   text-align: center;
-   font-family: "Work Sans", sans-serif;
-   font-size: 55px;
-   flex-wrap: wrap;
-   font-weight: 700;
-   line-height: 1.2;
-   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-   padding: 0 20px;
-  
-   /* ANIMATION */
-   opacity: 0;
-   transform: translateY(40px);
-   animation: slideFadeIn 1.5s ease-out forwards;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #2c3e50;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+    text-align: left;
+    margin-bottom: 0.8rem;
 }
 
-/* ANIMATION */
-@keyframes slideFadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.home_services_cont{
-    background-color: cornsilk;
-    width: 100%;
-    margin-top: 40px;
-    /* border-style: solid; */
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 2rem 1rem;
-}
-
-.home_services_title{
-    text-align: center;
-    text-decoration: underline;
-    font-family: "Work Sans", sans-serif;
-    font-size: 25px;
-    font-style: italic;
-}
-
-.home_services_time_cont{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-}
-
-.service_time{
-    text-decoration: none;
-    color: dimgray;
-    text-align: center;
-    font-family: "Work Sans", sans-serif;
-    font-size: 16px;
-}
-
-.service_title{
-    text-decoration: underline;
-    font-style:italic;
-    font-weight: bold;
-    font-family: "Work Sans", sans-serif;
+.home_subtitle {
     font-size: 20px;
-    text-align: center;
+    color: #34495e;
+    line-height: 1.5;
 }
 
-.home_image{
-    margin-top: 20px;
-    width: 700px;
-    height: 350px;
-    margin-right: 20px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.home_image :hover{
-    transform: scale(1.02);
-    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
-}
-
-.home_intro{
-    display: flex;
+/* Bible Verse */
+.home_bible_verse {
+    margin-top: 0.5rem;
 }
 
 .give_verse {
-  font-family: "Georgia", serif;
-  font-size: 20px;
-  font-style: italic;
-  line-height: 1.6;
-  margin: 20px auto;
-  padding: 15px 20px;
-  border-left: 5px solid #2c3e50;
-  background: #fdfdfd;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
-  max-width: 500px;
+    font-family: "Georgia", serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.6;
+    padding: 12px 20px;
+    border-left: 5px solid #2c3e50;
+    background: #fdfdfd;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+    max-width: 500px;
 }
 
 .verse_ref {
-  display: block;
-  margin-top: 10px;
-  text-align: right;
-  font-size: 16px;
-  font-style: normal;
-  color: #444;
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    font-size: 16px;
+    color: #444;
 }
 
+/* Buttons */
+.home_button {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
 
-/* ___________________________________________________________________________________________________________________________________ */
-/* @media */
-/* Changes the layout of the home page when the screen size changes (phone) */
+.home_button button {
+    padding: 0.8rem 1.8rem;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home_button button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Image Section */
+.home_images_cont {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.home_image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home_image:hover {
+    transform: scale(1.03);
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.4);
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 900px) {
+    .home_cont {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 2%;
+    }
+
+    .home_intro, .home_images_cont {
+        max-width: 100%;
+    }
+
+    .home_title {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .home_subtitle {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .home_button {
+        justify-content: center;
+    }
+
+    .give_verse {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 600px) {
-  .home_cont {
-    height: auto;
-    padding: 1rem;
-  }
+    .home_title {
+        font-size: 32px;
+    }
 
-  .home_title {
-    font-size: 32px;
-    padding: 0 10px;
-  }
+    .home_subtitle {
+        font-size: 16px;
+    }
 
-  .home_services_cont {
-    height: auto;
-    margin-top: 30px;
-    padding: 1rem;
-  }
+    .home_button button {
+        width: 200px;
+    }
 
-  .home_services_time_cont {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .home_image {
-    width: 90%;
-    height: auto;
-    margin: 20px 0;
-  }
-
-  .home_intro {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .service_title {
-    font-size: 18px;
-  }
-  .service_time {
-    font-size: 14px;
-  }
-  .give_verse {
-    font-size: 18px;
-    padding: 10px 15px;
-  }
-
-
+    .give_verse {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
 }

@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { IoLocationOutline } from "react-icons/io5";
 
+import "./Visit.css";
+
 function Visit(){
 
        const navigate = useNavigate();
