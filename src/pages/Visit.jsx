@@ -1,17 +1,32 @@
+import { useNavigate } from "react-router-dom";
+
 function Visit(){
 
-       const serviceTimes = [
-      { title: "Early Morning Daily Service", time: "5:30am-6:30am" },
-      { title: "Sunday School", time: "8:00am-9:00am" },
-      { title: "English Sunday service", time: "9:00am-10:30am" },
-      { title: "Kiswahili Sunday service (Main)", time: "10:30am-12:30pm" },
-      { title: "Compassion Saturday Programme", time: "from 7:00am" },
-   ];
+       const navigate = useNavigate();
+
+       const mainService = {
+         title: "Kiswahili Sunday service (Main)",
+         time: "10:30am-12:30pm",
+         description: "Join us for our main Sunday service, filed with worship, teaching and community fellowship."
+       };
+
+       const otherServices = [
+        { title: "Early Morning Daily Service", time: "5:30am-6:30am" },
+        { title: "Sunday School", time: "8:00am-9:00am" },
+        { title: "English Sunday service", time: "9:00am-10:30am" },
+        { title: "Compassion Saturday Programme", time: "from 7:00am" },
+       ];
 
 
     return(
         <div className="visit_cont">
-            <h1>Plan Your Visit</h1>
+
+            {/* Header */}
+            <div className="visit-header">
+               <h1>Plan Your Visit</h1>
+               <p>You are most welcome! Here is some helpful information to make your visit comfortable.</p>
+            </div>
+            
 
                  
            {/* SERVICES */}

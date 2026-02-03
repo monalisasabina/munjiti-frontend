@@ -18,6 +18,7 @@ import Saloon from "./pages/Saloon";
 import IT from "./pages/IT";
 import School from "./pages/School";
 import Missions from "./pages/Missions";
+import Visit from "./pages/Visit";
 
 
 const routes = [
@@ -29,6 +30,10 @@ const routes = [
         {
             path: "/",
             element: <Home/>,
+        },
+        {
+            path: "/visit",
+            element: <Visit/>,
         },
         {
             path: "/about",

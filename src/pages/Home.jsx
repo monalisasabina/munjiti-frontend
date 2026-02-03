@@ -1,9 +1,10 @@
 import "./home.css"
 import churchImage from '../Pictures/Munjiti Church.png'
+import { useNavigate } from "react-router-dom"
 
 function Home(){
 
-
+    const navigate = useNavigate();
 
  return(
     <div className="home_cont">
@@ -29,7 +30,7 @@ function Home(){
        {/* Visit Button */}
        <div className="home_button">
 
-        <button className="Plan Your Visit"></button>
+        <button className="home_visit_btn" onClick={() => navigate("/visit")}>Plan Your Visit</button>
 
        </div>
 
