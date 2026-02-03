@@ -61,7 +61,7 @@ npm run dev
 
 ---
 
-### Future Improvements
+## Future Improvements
 - Online services schedules
 - Sermon uploads (audio or video)
 - Improved mobile responsiveness
