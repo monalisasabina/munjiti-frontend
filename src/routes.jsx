@@ -19,6 +19,7 @@ import IT from "./pages/IT";
 import School from "./pages/School";
 import Missions from "./pages/Missions";
 import Visit from "./pages/Visit";
+import Notices from "./pages/Notices";
 
 
 const routes = [
@@ -34,6 +35,10 @@ const routes = [
         {
             path: "/visit",
             element: <Visit/>,
+        },
+        {
+            path: "/notices",
+            element: <Notices/>
         },
         {
             path: "/about",

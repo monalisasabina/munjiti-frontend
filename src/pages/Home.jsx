@@ -27,10 +27,11 @@ function Home(){
           </div>
    
 
-       {/* Visit Button */}
+       {/* Buttons */}
        <div className="home_button">
 
-        <button className="home_visit_btn" onClick={() => navigate("/visit")}>Plan Your Visit</button>
+        <button onClick={() => navigate("/visit")}>Plan Your Visit</button>
+        <button onClick={() => navigate("/notices")}>Notices</button>
 
        </div>
 
