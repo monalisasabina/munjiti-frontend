@@ -13,7 +13,7 @@ function Home(){
       <div className="home_intro">
 
          <div className="home-heading-block">
-             <h1 className="home_title"> St. Mary's Munjiti Parish</h1>
+             <h1 className="home_title">ACK St. Mary's Munjiti Parish</h1>
 
              <p className="home_subtitle">
                   A welcoming Anglican community in Munjiti, rooted in faith, worship and fellowship
